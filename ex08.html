@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function input(str){
+             return str
+             .split(" ")   //tách chuỗi thành mãng ký tự
+             .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+             .join(" ");
+        }
+        const str1 = "hello WORLD";
+        const str2 = "rIKKei acaDEMy";
+        console.log(input(str1));
+        console.log(input(str2));
+    </script>
+</body>
+</html>
+
+
+
+//wowo
