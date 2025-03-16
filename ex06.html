@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+
+            function isPalindrome(str) {
+                str = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+                let reversed = str.split('').reverse().join('');
+                return str === reversed;
+            }
+            let inputString = prompt("Nhập vào một chuỗi để kiểm tra xem nó có phải là chuỗi đối xúng không:");
+
+            if (isPalindrome(inputString)) {
+                alert("Chuỗi bạn nhập là chuỗi đối xứng");
+
+            } else {
+                alert("Chuỗi bạn nhập không phải là chuỗi đối xứng.");
+            }
+        </script>
+
+    </body>
+
+</html>
